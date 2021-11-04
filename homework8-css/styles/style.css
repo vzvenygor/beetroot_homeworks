@@ -1,0 +1,164 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+.nav-menu-link {
+    padding-right: 41px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav-menu-link a {
+    text-decoration: none;
+    color: #828282;
+    text-shadow: 2px 2px 5px #828282;
+}
+
+.nav-menu-link a:hover {
+    color: #070707;
+}
+
+.header-line {
+    box-shadow: 1px 1px 5px #aaa9a9;
+    margin: 0 210px;
+}
+
+main {
+    margin: 0 210px;
+}
+
+.slider-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    padding: 100px 0 40px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+#about {
+    margin-top: 100px;
+    background: #F6F6F6;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+#about h2 {
+    padding-bottom: 26px;
+}
+
+#about p {
+    padding: 0 300px 30px 300px;
+}
+
+#about p:last-child {
+    padding-bottom: 100px;
+}
+
+.skills-paragraph {
+    padding-top: 44px;
+    padding-bottom: 78px;
+}
+
+.skills-descr {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-descr-container {
+    margin-right: 90px;
+}
+
+.skills-descr-container:last-child {
+    margin-right: 0;
+}
+
+.skills-descr-container-paragraph {
+    font-family: "Gilroy-Bold";
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 30px;
+}
+
+#portfolio {
+    margin-top: 80px;
+    background: #F6F6F6;
+}
+
+#portfolio h2 {
+    padding-bottom: 68px;
+}
+
+#portfolio img {
+    width: 70%;
+}
+
+.portfolio-descr-link {
+    padding-top: 16px;
+    padding-bottom: 128px;
+}
+
+.portfolio-descr-link a {
+    color: #070707;
+}
+
+.contacts-descr {
+    padding-top: 22px;
+    padding-bottom: 86px;
+}
+
+.contacts-button {
+    background: #070707;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.social {
+    margin-top: 38px;
+    margin-bottom: 44px;
+}
+
+.social a {
+    padding-right: 60px;
+}
+
+.social a:last-child {
+    padding-right: 0;
+}
+
+.footer-descr {
+    padding-bottom: 160px;
+}
+
+@font-face {
+    font-family: "Gilroy-Bold"; 
+    src: url("/fonts/Gilroy-Bold.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+    
