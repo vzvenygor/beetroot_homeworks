@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .1s ease-in;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    text-align: center;
+    margin: 5% 20%;
+    max-width: 793px;
+}
+
+.header {
+    background: #4A4F56;
+    color: #FF8984;
+}
+
+.header-title {
+    padding-top: 19px;
+    font-size: 24px;
+}
+
+.header-descr {
+    padding-top: 4px;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+.shoping-form {
+    background: #3B3F45;
+    color: #FFFFFF;
+    padding: 20px 130px 45px;
+}
+
+.form-content {
+    background: #88839E;
+    max-width: 534px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    padding: 12px 0;
+}
+
+p {display: inline;}
+
+.text-in-brackets {
+    font-size: 11px;
+}
+
+form label:nth-child(even) {
+    background: #7A7593;
+}
+
+form label:hover {
+    background: #625E77;
+    cursor: pointer;
+}
+
+form label:hover::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: white;
+    position: relative;
+    top: -12px;
+}
+
+form label:hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: white;
+    position: relative;
+    bottom: -12px;
+
+}
+
+form label:active {
+    font-size: 18px;
+}
+
+input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: white;
+    text-align: center;
+    margin: 0 12px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 45px;
+    background: #4A4F56;
+    color: #FF8984;
+    font-size: 18px;
+    padding: 12px 0;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background: #393b3f;
+}
+
+
