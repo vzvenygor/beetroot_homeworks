@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    transition: all .1s ease-in;
+}
+
+.mainBorder {
+    margin: 100px auto;
+    max-width: 832px;
+    background: #3399CC;
+    border: 14px solid #2B81AC;
+}
+
+.mainBorder-tab {
+    margin: 110px 130px;
+    color: white;
+}
+
+.wi-day-sunny {
+    font-size: 16px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.city {
+    display: inline-block;
+    font-size: 16px;
+    padding: 16px 0;
+    text-align: center;
+    margin: -3px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.mainBorder-tab-lisbon {
+    width: 50%;
+    background: #3399CC;
+}
+
+.mainBorder-tab-paris {
+    width: 25%;
+    background: #33CCCC;
+}
+
+.mainBorder-tab-belgrade {
+    width: 25%;
+    background: #996699;
+}
+
+.mainBorder-tab-venice {
+    width: 25%;
+    background: #C24747;
+}
+
+.mainBorder-tab-telAviv {
+    width: 25%;
+    background: #E2674A;
+}
+
+.mainBorder-tab-kyiv {
+    width: 25%;
+    background: #FFCC66;
+}
+
+.mainBorder-tab-amsterdam {
+    width: 25%;
+    background: #99CC99;
+}
+
+.mainBorder-tab-tokyo {
+    width: 25%;
+    background: #669999;
+}
+
+.mainBorder-tab-sisco {
+    width: 50%;
+    background: #CC6699;
+}
+
+.mainBorder-tab-sydney {
+    width: 25%;
+    background: #339966;
+}
+
+.mainBorder-tab-newDeli {
+    width: 100%;
+    background: #666699;
+}
+
+.city:hover {
+    border: 3px solid #33CCCC;
+}
