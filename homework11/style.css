@@ -30,8 +30,10 @@ a:hover {
 }
 
 
-body {
-    margin: 0 144px;
+.productly {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .header {
@@ -67,6 +69,7 @@ body {
     padding: 11px 23px;
     background: white;
     color: #173A56;
+    font-weight: 700;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
     cursor: pointer;
