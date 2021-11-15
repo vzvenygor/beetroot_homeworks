@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  margin: 100px auto;
+  max-width: 1020px;
+  border-collapse: collapse;
+  color: #2e3b52;
+}
+
+tr {
+  width: 100%;
+  height: 56px;
+}
+
+tr:nth-child(2n + 1) {
+  background: #f4f7fc;
+}
+
+.list__header {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: left;
+}
+
+.list__header th:nth-child(3) {
+  text-align: center;
+}
+
+.list__checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6f809e;
+  border-radius: 3px;
+  margin: 0 30px;
+}
+
+td:nth-child(3) {
+  padding-left: 92px;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+  padding-left: 100px;
+}
+
+td:nth-child(5),
+th:nth-child(5) {
+  padding-left: 60px;
+}
+
+td:nth-child(5) {
+  text-align: center;
+}
+
+td:last-child,
+th:last-child {
+  padding-left: 30px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.list__id {
+  font-size: 12px;
+  line-height: 15px;
+  color: #606f89;
+}
+
+.list__status,
+.list__status_inactive {
+  background: #0a65ff;
+  padding: 4px 5px;
+  border-radius: 11px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.list__status_inactive {
+  background: transparent;
+  color: #606f89;
+  border: 1px solid #606f89;
+  border-radius: 11px;
+}
+
+.list__icon {
+  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.list__icon:last-child {
+  padding-right: 0;
+  margin-right: 30px;
+}
