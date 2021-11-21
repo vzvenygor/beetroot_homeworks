@@ -10,27 +10,40 @@
   max-width: 1020px;
   border-collapse: collapse;
   color: #2e3b52;
+  box-shadow: 0 3px 6px 0 #4b515b;
 }
 
-tr {
-  width: 100%;
+tr:not(.list__header):nth-child(2n + 1) {
+  background: #f4f7fc;
   height: 56px;
 }
 
-tr:nth-child(2n + 1) {
-  background: #f4f7fc;
-}
-
 .list__header {
+  background: #f4f7fc;
   width: 100%;
+  max-height: 45px;
   font-size: 12px;
   font-weight: 600;
   line-height: 15px;
   text-align: left;
 }
 
-.list__header th:nth-child(3) {
+.list__header_descr {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.list__header_descr:nth-child(3) {
   text-align: center;
+  padding-left: 46px;
+}
+
+.list__header_descr:nth-child(4) {
+  padding-left: 80px;
+}
+
+.list__header_descr:nth-child(5) {
+  padding-left: 60px;
 }
 
 .list__checkbox {
@@ -38,45 +51,46 @@ tr:nth-child(2n + 1) {
   height: 20px;
   border: 1px solid #6f809e;
   border-radius: 3px;
-  margin: 0 30px;
+  margin: 0 30px 0;
 }
 
-td:nth-child(3) {
-  padding-left: 92px;
+.list__description {
+  padding-left: 110px;
+  box-sizing: border-box;
 }
 
-td:nth-child(4),
-th:nth-child(4) {
-  padding-left: 100px;
+.list__description p {
+  width: 80%;
 }
 
-td:nth-child(5),
-th:nth-child(5) {
-  padding-left: 60px;
+.list__deposit {
+  padding-left: 80px;
 }
 
 td:nth-child(5) {
   text-align: center;
 }
 
-td:last-child,
-th:last-child {
-  padding-left: 30px;
-}
-
 h3 {
   font-size: 14px;
   font-weight: 600;
   line-height: 17px;
+  padding-top: 10px;
 }
 
 .list__id {
+  display: inline-block;
   font-size: 12px;
   line-height: 15px;
   color: #606f89;
+  padding-bottom: 10px;
 }
 
-.list__status,
+.list__status {
+  padding-left: 50px;
+}
+
+.list__status_active,
 .list__status_inactive {
   background: #0a65ff;
   padding: 4px 5px;
@@ -94,14 +108,18 @@ h3 {
   border-radius: 11px;
 }
 
+.list__icons {
+  display: flex;
+  padding-left: 54px;
+}
+
 .list__icon {
-  padding-right: 10px;
   width: 20px;
   height: 20px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .list__icon:last-child {
-  padding-right: 0;
-  margin-right: 30px;
+  margin-right: 18px;
 }
