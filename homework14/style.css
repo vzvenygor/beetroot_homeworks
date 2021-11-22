@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C9C9C9;
+}
+
+header, main {
+    margin: 0 24px 0 56px;
+}
+
+.main-container {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
+    background: #FFFFFF;
+    margin: 100px auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.main-header__content {
+    display: flex;
+}
+
+.main-header__language {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #000;
+}
+
+.main-header__bread-crumbs {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 42px;
+}
+
+.main-header__logo {
+    max-width: 243px;
+    position: relative;
+}
+
+.konstruct-logo {
+    opacity: 0.2;
+}
+
+.triangle-logo {
+    position: absolute;
+    top: 1px;
+    right: 25px;
+}
+
+main {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 500px;
+}
+
+h1.main-title {
+    margin-top: 83px;
+    font-weight: 700;
+
+}
+
+.info__title {
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 58px;
+}
+
+.info__title_num {
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+.info__paragraph {
+    padding-top: 48px;
+}
+
+.info__link {
+    color: #000;
+}
