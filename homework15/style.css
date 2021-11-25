@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Roboto-Black;
+    src: url(assets/fonts/Roboto-Black.ttf);
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+    font-style: normal; 
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C9C9C9;
+}
+
+header, main {
+    margin: 0 24px 0 56px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-container {
+    font-family: 'Roboto-Regular', sans-serif;
+    max-width: 1920px;
+    background: #FFFFFF;
+    margin: 100px auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.main-header__content {
+    display: flex;
+}
+
+.main-header__language {
+    font-family: 'Roboto-Black';
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #000;
+}
+
+.main-header__bread-crumbs {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 42px;
+}
+
+.main-header__logo {
+    max-width: 243px;
+    position: relative;
+    padding-bottom: 58px;
+}
+
+.konstruct-logo {
+    opacity: 0.2;
+}
+
+.triangle-logo {
+    position: absolute;
+    top: 1px;
+    right: 25px;
+}
+
+main {
+    display: flex;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.navigation__menu {
+    list-style: none;
+    width: 100%;
+    margin-right: 300px;
+}
+
+li.navigation__item {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.info {
+    margin-top: 54px;
+    max-height: 937px;
+    overflow-y: scroll;
+    position: relative;
+    background: url(./assets/img/Frame\ 1.svg) no-repeat;
+    background-position: right bottom;
+}
+
+.title {
+    font-family: "Roboto-Black";
+    font-size: 36px;
+    line-height: 48px;
+    padding-top: 50px;
+}
+
+.info__title {
+    position: relative;
+}
+
+.info__title::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #000;
+    top: 12px;
+}
+
+.title_num {
+    font-size: 20px;
+}
+
+.info__paragraph {
+    padding: 48px 0;
+}
+
+.info__link {
+    color: #000;
+    text-decoration: underline;
+}
