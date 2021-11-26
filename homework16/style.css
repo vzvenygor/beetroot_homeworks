@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-form {
+  margin: 100px auto;
+  max-width: 540px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 2px 2px 7px 1px rgb(187, 187, 187);
+  border-radius: 4px;
+}
+
+.login-form__content {
+  margin: 18px;
+}
+
+.login-form__title {
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 10px;
+  color: #1c1c1c;
+}
+
+.login-form__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.form__label {
+  font-size: 15px;
+  line-height: 22px;
+  color: #545454;
+}
+
+.login-form__item {
+  border: 1px solid #969696;
+  border-radius: 5px;
+  height: 38px;
+  margin-top: 7px;
+}
+
+.login-form__item:focus {
+  border: 1px solid blue;
+  outline: none;
+}
+
+.login-form__item:focus:valid {
+  border: 1px solid green;
+  box-shadow: 0 0 5px 1px green;
+}
+
+.login-form__item--small {
+  width: 245px;
+  margin-bottom: 20px;
+}
+
+.login-form__item--big {
+  width: 500px;
+}
+
+.form__label--small:first-child {
+  margin-right: 10px;
+}
+
+.login-form__descr {
+  padding-top: 7px;
+  font-size: 13px;
+  color: #969696;
+}
+
+.gender__select {
+  padding-top: 20px;
+  display: flex;
+}
+
+.gender__select_input {
+  margin-right: 20px;
+}
+
+.gender__select_input input[type="radio"] {
+  display: none;
+}
+
+.gender__select_input label {
+  margin-right: 20px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #545454;
+}
+
+.gender__select_input label::before {
+  display: inline-block;
+  content: "";
+  cursor: pointer;
+  border: 1px solid #999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.gender__select_input input[type="radio"]:checked + label::before {
+  background-color: blue;
+  background-image: radial-gradient(
+    circle closest-corner at 50% 50%,
+    #fff 30%,
+    blue 30%
+  );
+}
+
+.login-form--select {
+  position: relative;
+}
+
+select {
+  color: #545454;
+  -webkit-appearance: none;
+  padding-left: 10px;
+  background: url("./assets/img/arrows.png") no-repeat right;
+  background-size: 15px 15px;
+}
+
+.login-form__submit {
+  display: none;
+}
+
+.login-form__descr--policy {
+  text-align: center;
+  padding: 22px 65px 0;
+}
+
+.login-form__descr--policy::after {
+  content: "";
+  display: inline-block;
+  width: 500px;
+  height: 1px;
+  background: #969696;
+  opacity: 50%;
+  margin-top: 20px;
+  margin-left: -60px;
+}
+
+.login-form__descr--bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 31px;
+}
