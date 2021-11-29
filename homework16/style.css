@@ -124,11 +124,45 @@ a {
 }
 
 select {
-  color: #545454;
+  position: relative;
+  color: #a79999;
   -webkit-appearance: none;
   padding-left: 10px;
-  background: url("./assets/img/arrows.png") no-repeat right;
+  /* background: url("./assets/img/arrows.png") no-repeat right, url("./assets/img/arrows.png") no-repeat right; */
   background-size: 15px 15px;
+}
+
+.select__wrapper {
+  position: relative;
+}
+
+.select__wrapper::before, .select__wrapper::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 7px;
+  border-left-width: 7px;
+  transition: border-color 0.3s;
+}
+
+.select__wrapper::after {
+  top: 0px;
+  border-bottom: 7px solid #a79999;
+}
+
+.select__wrapper::before {
+  bottom: 0;
+  border-top: 7px solid #a79999;
+  z-index: 10;
+}
+
+.select__wrapper:focus-within::after, .select__wrapper:focus-within::before  {
+  border-top-color: blue;
+  border-bottom-color: blue;
 }
 
 .login-form__submit {
