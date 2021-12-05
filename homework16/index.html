@@ -18,43 +18,47 @@
           class="login-form__items"
         >
           <div class="login-form__container">
-            <label class="form__label form__label--small">
-              First Name
-              <br />
-              <input
-                type="text"
-                class="login-form__item login-form__item--small"
-                name="first-name"
-                maxlength="60"
-                required
-              />
-            </label>
-            <label class="form__label form__label--small">
-              Last Name
-              <br />
-              <input
-                type="text"
-                class="login-form__item login-form__item--small"
-                name="last-name"
-                maxlength="60"
-                required
-              />
-            </label>
-          </div>
+            <div class="login-form__container--small">
+              <label class="form__label form__label--small">
+                First Name
+                <br />
+                <input
+                  type="text"
+                  class="login-form__item login-form__item--small"
+                  name="first-name"
+                  maxlength="60"
+                  required
+                />
+              </label>
+              <label class="form__label form__label--small">
+                Last Name
+                <br />
+                <input
+                  type="text"
+                  class="login-form__item login-form__item--small"
+                  name="last-name"
+                  maxlength="60"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label class="form__label form__label--big">
+                E-mail
+                <br />
+                <input
+                  type="email"
+                  class="login-form__item login-form__item--big"
+                  name="email"
+                  required
+                />
+              </label>
+              <span class="login-form__descr"
+                >We'll never share your email with anyone else.</span
+              >
+              </div>
+            </div>
 
-          <label class="form__label form__label--big">
-            E-mail
-            <br />
-            <input
-              type="email"
-              class="login-form__item login-form__item--big"
-              name="email"
-              required
-            />
-          </label>
-          <span class="login-form__descr"
-            >We'll never share your email with anyone else.</span
-          >
           <div class="gender__select">
             <div class="gender__select_input">
               <input
@@ -79,6 +83,7 @@
           </div>
 
           <div class="login-form__container">
+            <div class="login-form__container--small">
             <label class="form__label form__label--small">
               Country
               <br />
@@ -108,12 +113,16 @@
                 required
               />
             </label>
+            </div>
+
+            <div>
+              <input
+              type="text"
+              class="login-form__item login-form__item--big"
+              maxlength="255"
+            />
+              </div>
           </div>
-          <input
-            type="text"
-            class="login-form__item login-form__item--big"
-            maxlength="255"
-          />
           <input type="submit" class="login-form__submit" />
         </form>
         <div class="login-form__descr login-form__descr--policy">

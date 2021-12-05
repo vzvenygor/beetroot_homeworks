@@ -6,7 +6,7 @@
 }
 
 a {
-  color: blue;
+  color: #007BFF;
   text-decoration: none;
 }
 
@@ -30,10 +30,12 @@ a {
 }
 
 .login-form__container {
+  margin-top: 20px;
+}
+
+.login-form__container--small {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .form__label {
@@ -47,10 +49,11 @@ a {
   border-radius: 5px;
   height: 38px;
   margin-top: 7px;
+  padding-left: 10px;
 }
 
 .login-form__item:focus {
-  border: 1px solid blue;
+  border: 1px solid #007BFF;
   outline: none;
 }
 
@@ -60,12 +63,12 @@ a {
 }
 
 .login-form__item--small {
-  width: 245px;
+  width: 233px;
   margin-bottom: 20px;
 }
 
 .login-form__item--big {
-  width: 500px;
+  width: 495px;
 }
 
 .form__label--small:first-child {
@@ -111,16 +114,18 @@ a {
 }
 
 .gender__select_input input[type="radio"]:checked + label::before {
-  background-color: blue;
+  background-color: #007BFF;
   background-image: radial-gradient(
     circle closest-corner at 50% 50%,
     #fff 30%,
-    blue 30%
+    #007BFF 30%
   );
 }
 
 .login-form--select {
   position: relative;
+  width: 245px;
+  height: 40px;
 }
 
 select {
@@ -128,7 +133,6 @@ select {
   color: #a79999;
   -webkit-appearance: none;
   padding-left: 10px;
-  /* background: url("./assets/img/arrows.png") no-repeat right, url("./assets/img/arrows.png") no-repeat right; */
   background-size: 15px 15px;
 }
 
@@ -161,8 +165,8 @@ select {
 }
 
 .select__wrapper:focus-within::after, .select__wrapper:focus-within::before  {
-  border-top-color: blue;
-  border-bottom-color: blue;
+  border-top-color: #007BFF;
+  border-bottom-color: #007BFF;
 }
 
 .login-form__submit {
