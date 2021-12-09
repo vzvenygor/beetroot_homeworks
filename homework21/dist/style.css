@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-block {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 0 20px;
+  background: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .content-block {
+    padding: 0 160px;
+  }
+}
+
+.title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.paragraph {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+  padding-top: 50px;
+}
+
+.paragraph--small {
+  max-width: 544px;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .paragraph--small {
+    padding-top: 16px;
+  }
+}
+
+.paragraph:last-child {
+  padding-bottom: 170px;
+}
+
+@media screen and (max-width: 1200px) {
+  .paragraph:last-child {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .paragraph:last-child {
+    padding-bottom: 70px;
+  }
+}
+
+.header {
+  padding-top: 73px;
+}
+
+.header__logo {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: 0.5em;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-top: 112px;
+  }
+}
+
+.main__title {
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  padding-top: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding-top: 39px;
+  }
+}
+
+.content-block__img {
+  max-width: 1120px;
+  max-height: 470px;
+}
+
+.content-block__img img {
+  width: 100%;
+  padding-top: 64px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-block__img img {
+    padding-top: 52px;
+  }
+}
+
+.content-block__title {
+  font-size: 23px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  padding-top: 128px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-block__title {
+    padding-top: 56px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content-block__title {
+    padding-top: 48px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
