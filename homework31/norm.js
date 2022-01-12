@@ -35,11 +35,11 @@ if (purchaseSum < 200) {
 //3
 let arr = prompt('Enter 10 integers, separated by coma').split(',', 10);
 
-let positive = [...arr].map(e => Math.sign(+e) ).filter(num => +num === 1).length,
-    negative = [...arr].map(e => Math.sign(+e) ).filter(num => +num === -1).length,
-	zero = [...arr].map(e => Math.sign(+e) ).filter(num => +num === 0).length;
-    even = [...arr].map(e => Math.sign(+e) ).filter(num => +num % 2 === 0).length;
-    odd = [...arr].map(e => Math.sign(+e) ).filter(num => +num % 2 != 0).length;
+let positive = arr.map(e => Math.sign(+e) ).filter(num => +num === 1).length,
+    negative = arr.map(e => Math.sign(+e) ).filter(num => +num === -1).length,
+	zero = arr.map(e => Math.sign(+e) ).filter(num => +num === 0).length;
+    even = arr.map(e => Math.sign(+e) ).filter(num => +num % 2 === 0).length;
+    odd = arr.map(e => Math.sign(+e) ).filter(num => +num % 2 != 0).length;
 
 if(positive) alert('Positive: ' + positive);
 if(negative) alert('Negative: ' + negative);

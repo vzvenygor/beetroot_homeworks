@@ -68,7 +68,7 @@ alert(`Gcd is equal to ${gcd}`);
 //5
 let a = +prompt('Enter number');
 
-for (let i = 0; i <= a; i++) {
+for (let i = 1; i <= a; i++) {
     if (a % i === 0) {
         console.log(i);
     }
