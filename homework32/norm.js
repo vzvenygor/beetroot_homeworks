@@ -11,13 +11,13 @@ function setPerfectNumber (num) {
         }
     }
     if (num === sum) {
-        alert(`Число ${num} є досконалим`);
+        return true;
     } else {
-        alert(`Число ${num} не є досконалим`);
+        return false;
     }
 }
 
-setPerfectNumber(6);
+console.log(setPerfectNumber(7));
 
 
 /*2. Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, 
