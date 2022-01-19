@@ -49,9 +49,9 @@ newDriver('Viktor Yuschenko');
 const setFuel = (fuel) => {
     let fuelLevel = car['fuel tank volume'] - fuel;
     if (fuel < 10) {
-        return Object.assign(car, {message: `Потрібна заправка! До повної заправки потрібно залити ${fuelLevel} літрів пального`});
+        return car.message = `Потрібна заправка! До повної заправки потрібно залити ${fuelLevel} літрів пального`;
     } else {
-        return Object.assign(car, {message:` У баці ${fuelLevel} літрів пального`});
+        return car.message = `У баці ${fuelLevel} літрів пального`;
     }
 }
 
@@ -60,9 +60,9 @@ setFuel(9);
 // 4. Підрахунок необхідного часу для подолання переданої відстані з середньою швидкістю.
 
 const isDriver = (driverName) => {
-    if (driverName === car.driver1 || driverName === car.driver2 || driverName === car.driver3) {
-        return true;
-    } else return false;
+    return driverName === car.driver1
+        || driverName === car.driver2
+        || driverName === car.driver3;
 }
 
 // isDriver('Petro Poroshenko');
@@ -75,12 +75,12 @@ const setTimeOnRoad = (distance, isDriver) => {
     if (isDriver === true) {
         if (timeOnRoad >= 4) {
             extraTime = timeOnRoad + 1;
-            return Object.assign(car, {message2: `Дорога забере ${timeOnRoad} год. З врахуванням відпочинку - ${extraTime} год`});
+            return car.message2 = `Дорога забере ${timeOnRoad} год. З врахуванням відпочинку - ${extraTime} год`;
         } else {
-            return Object.assign(car, {message2: `Дорога забере ${timeOnRoad} год.`});
+            return car.message2 = `Дорога забере ${timeOnRoad} год.`;
         }
     } else 
-        return Object.assign(car, {varning:'Ви немаєте права керувати цим автомобілем!'});
+        return car.varning = 'Ви немаєте права керувати цим автомобілем!';
 }
 
 setTimeOnRoad(250);
@@ -91,9 +91,9 @@ const isFuelEnough = (distance, fuel) => {
     let difference = +(fuelForTrip - fuel).toFixed(2);
     
     if (fuelForTrip > fuel) {
-        return Object.assign(car, {message3: `Потрібна заправка! Для цієї поїздки вам не вистачає ${difference} літрів пального`});
+        return car.message3 = `Потрібна заправка! Для цієї поїздки вам не вистачає ${difference} літрів пального`;
     } else {
-        return Object.assign(car, {message3: 'Щасливої дороги!'});
+        return car.message3 = 'Щасливої дороги!';
     }
 }
 
