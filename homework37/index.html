@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <div id = 'list'></div>
+
+    <button class='modal__btn'>Тицьни мене</button>
+    <div class='modal__window'>
+        <p class='modal__window_content'>Привіт! Я модальне вікно!</p>
+        <span class='modal__window_btn modal__btn'>Закрити</span>
+    </div>
+
+    <div class='traffic-lights'>
+        <div class='traffic-lights__items'>
+            <div id = 'red' class='traffic-lights__item traffic-lights--red'></div>
+            <div id = 'yellow' class='traffic-lights__item'></div>
+            <div id = 'green' class='traffic-lights__item'></div>
+        </div>
+        <button class='traffic-lights__switcher'>Перемкнути світло</button>
+    </div>
+    <script src="main.js"></script>
+    <script src="modal.js"></script>
+    <script src="trafficLights.js"></script>
+</body>
+</html>

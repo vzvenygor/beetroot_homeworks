@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#list {
+    text-align: left;
+    padding: 20px;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.modal__btn {
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 auto;
+    color: white;
+    background: rgb(161, 161, 161);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.modal__window {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: calc(50% - 200px);
+    top: 20px;
+    background: gray;
+    opacity: 0.9;
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    color: white;
+}
+
+.modal__window_content {
+    padding: 50px 0 100px;
+    font-size: 24px;
+}
+
+.modal__window_btn {
+    background:chocolate;
+}
+
+.traffic-lights {
+    text-align: center;
+}
+
+.traffic-lights__items {
+    width: 150px;
+    margin: 100px auto 20px;
+    border: 1px solid black;
+
+}
+
+.traffic-lights__item {
+    margin: 0 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.traffic-lights--red {
+    background: red;
+}
+
+.traffic-lights--yellow {
+    background: yellow;
+}
+
+.traffic-lights--green {
+    background: green;
+}
+
+.traffic-lights__switcher {
+    padding: 5px 10px;
+}
