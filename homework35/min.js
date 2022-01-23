@@ -16,27 +16,35 @@ const shoppingList = [
 
 const sortListByBought = (a, b) => (a.isBought > b.isBought ? 1 : -1);
 
-shoppingList.sort(sortListByBought);
+const sortedList = [...shoppingList].sort(sortListByBought);
 
-console.log(shoppingList);
+console.log(sortedList);
 
 //Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 
 const purchaseProducts = function (someName) {
   for (i = 0; i < shoppingList.length; i++) {
     if (shoppingList[i].name === someName) {
-      return (shoppingList[i].isBought = true);
+      shoppingList[i].isBought = true;
+      return shoppingList[i]
     }
   }
 };
 
-purchaseProducts("potato");
+const productBought = purchaseProducts("potato");
 console.log(shoppingList);
+
+if (productBought) {
+    console.log(`Був куплений продукт ${productBought.name} за ${productBought.price} грн`);
+} else {
+    console.log('Продукту з такою назвою не існує');
+}
+ 
 
 //Створення списку (не) придбаних продуктів.
 
 const sortNotPurcaseList = shoppingList.filter(
-  (list) => list.isBought === false
+  (list) => !list.isBought
 );
 console.log(sortNotPurcaseList);
 
@@ -50,13 +58,13 @@ console.log(sortNotPurcaseList);
 const deliteListItem = function (itemName) {
   for (let j = 0; j < shoppingList.length; j++) {
     if (shoppingList[j].name === itemName) {
-      return shoppingList.splice(j, 1);
+      return [...shoppingList].splice(j, 1);
     }
   }
 };
 
-// deliteListItem('potato');
-// console.log(shoppingList);
+
+console.log(deliteListItem('potato'));
 
 // let remove = deliteListItem('potato');
 // console.log(remove);
