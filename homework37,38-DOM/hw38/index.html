@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Список пісень -->
+    <div class="songs-list"></div>
+
+    <!-- додаємо і видаляємо пісню -->
+    <button class="add-song button">Додати інформацію</button>
+    <button class="remove-song button">Видалити</button>
+
+    <div class="modal">
+        <div class="modal__content">
+                <label>
+                    Введіть виконавця:
+                    <input type="text" name="author" class="modal__content_author input">
+                </label>
+                <br>
+                <label>
+                    Введіть назву пісні:
+                    <input type="text" name="song" class="modal__content_song input">
+                </label>
+                <br>
+                <input type="button" class="modal__content_button--add" value="Додати">
+                <input type="button" class="modal__content_button--close" value="Закрити">
+        </div>
+    </div>
+
+    <!-- Світлофор -->
+    <div class='traffic-lights'>
+        <div class='traffic-lights__items'>
+            <div class='traffic-lights__item red' color = 'red'></div>
+            <div class='traffic-lights__item' color = 'yellow'></div>
+            <div class='traffic-lights__item' color = 'green'></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
