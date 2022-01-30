@@ -33,7 +33,7 @@ const menuLiCollection = document.querySelectorAll('nav li');
 */
 const sectionsImg = document.querySelectorAll('section img');
 
-const setImgArr = function(data) {
+const getImageArray = function(data) {
     let imgArr = [];
     for (let i = 0; i < data.length; i++) {
         imgArr.push(data[i]);
@@ -41,7 +41,7 @@ const setImgArr = function(data) {
     return imgArr;
 }
 
-console.log(setImgArr(sectionsImg));
+console.log(getImageArray(sectionsImg));
 
 //3  
 for (let i = 0; i < sectionsImg.length; i++) {
@@ -61,9 +61,9 @@ for (let i = 0; i < sectionsImg.length; i++) {
 //4
 const links = document.querySelectorAll('a');
 
-const setAllLinksData = function(someLinks) {
+const logAllLinksData = function(someLinks) {
     for (let i = 0; i < someLinks.length; i++) {
         console.log(`${someLinks[i].innerText}: ${someLinks[i].href}`);
     }
 }
-setAllLinksData(links);
+logAllLinksData(links);
