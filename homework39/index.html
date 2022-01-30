@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class='btn-open btn'>Тицьни мене</button>
+    <div class='modal'>
+        <div class='modal__content'>
+            <p class='modal__content_paragraph'>Привіт! Я модальне вікно!</p>
+            <span class='btn-close btn'>Закрити</span>
+        </div>
+    </div>
+
+    <div class="songs-list"></div>
+
+    <button class="add-song button">Додати інформацію</button>
+
+    <div class="modal-song">
+        <div class="modal-song__content">
+                <label>
+                    Введіть виконавця:
+                    <input type="text" name="author" class="modal__content_author input">
+                </label>
+                <br>
+                <label>
+                    Введіть назву пісні:
+                    <input type="text" name="song" class="modal__content_song input">
+                </label>
+                <br>
+                <input type="button" class="modal__content_button--add" value="Додати">
+                <input type="button" class="modal__content_button--close" value="Закрити">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
