@@ -43,21 +43,20 @@ const setImgArr = function(data) {
 
 console.log(setImgArr(sectionsImg));
 
-//3 тут я не можу придумати якогось універсального алгоритму, щоб діставати заголовки наступних секцій 
-// const setNextTitle = function(data) {
-//     let nextTitle = [];
-//     let title = document.getElementsByTagName('h4');
-//     let section = document.getElementsByTagName('section');
+//3  
+for (let i = 0; i < sectionsImg.length; i++) {
+    const closestSection = sectionsImg[i].closest('section');
 
-//     for (let i = 0; i < data.length; i++) {
-//         if (data[i].nextSibling === section) {
-//             nextTitle.push(??);
-//         } 
-//     }
-//     return nextTitle;
-// }
-
-// console.log(setNextTitle(sectionsImg));
+    const nextTag = closestSection.nextElementSibling;
+        
+    if (nextTag.tagName === 'SECTION') {
+        const heading = nextTag.querySelectorAll('h1, h2, h3, h4');
+    
+        for (let j = 0; j < heading.length; j++) {
+            console.log(heading[j].innerText);
+        }
+    } 
+}
 
 //4
 const links = document.querySelectorAll('a');
