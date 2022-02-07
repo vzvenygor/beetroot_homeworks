@@ -36,7 +36,10 @@ function sortTable() {
     for (let row of rows) tbody.appendChild(row);
 }
 
-//3
+/*3 Не зміг зробити це завдання. 
+Списувати не хочу, бо приклади, які знайшов, складні, 
+а я хотів би зрозуміти і самостійно реалізувати((
+*/
 const divWithText = document.querySelector('.change-size');
 
 const setCoordinates = function(e) {
