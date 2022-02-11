@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="formWithValidation" name="main" action="/">
+        <div>
+          <div>
+            <label>Login:</label>
+          </div>
+          <div>
+            <input type="text" id="login" name="login" required />
+            <span class="invalidSymb"></span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>Password:</label>
+          </div>
+          <div>
+            <input type="password" class="password" name="password" required />
+            <span class="invalidSymb1"></span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label>E-mail:</label>
+          </div>
+          <div>
+            <input type="email" class="email" name="email" required />
+            <span class="invalidSymb2"></span>
+          </div>
+        </div>
+        <div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="nameRadio" class="radio" id="radio_1" />
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="nameRadio" class="radio" id="radio_2" />
+              Female
+            </label>
+          </div>
+          <span class="invalidSymb3"></span>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input
+              type="checkbox"
+              name="nameCheck"
+              class="main-form__radio"
+              id="check_1"
+            />
+            Чекбокс
+          </label>
+        </div>
+        <span class="invalidSymb4"></span>
+        <div>
+          <div>
+            <label>Textarea:</label>
+          </div>
+          <div>
+            <textarea class="textarea" name="textarea" maxlength="250"></textarea>
+            <div>Залишилося <span class="textarea-counter"></span> символів</div>
+          </div>
+        </div>
+        <input type="submit" class="validateBtn" value="Validate" />
+
+        <script src="main.js"></script>
+</body>
+</html>
